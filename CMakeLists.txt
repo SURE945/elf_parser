@@ -4,4 +4,6 @@ set(CMAKE_BUILD_TYPE DEBUG)
 
 include_directories(include)
 
-add_executable(elf_parser main.cpp src/test.cpp src/help.cpp)
+add_executable(elf_parser main.cpp 
+                        src/test.cpp 
+                        src/help.cpp)
