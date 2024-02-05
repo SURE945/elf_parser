@@ -3,6 +3,7 @@
 #include <string>
 #include "test.h"
 #include "help.h"
+#include "elf_header.h"
 
 int main(int argc, char* argv[]) {
     std::fstream fin;
@@ -14,10 +15,12 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    if (argv[1][1] == 'h') {
+    if (argv[1][1] == 'H') {
         print_help_information();
     } else if (argv[1][1] == 't') {
         elf_parser_test(fin);
+    } else if (argv[1][1] == 'h') {
+        parse_elf_header(fin);
     } else {
         std::cout << "invalid argument" << std::endl;
     }

@@ -24,6 +24,7 @@ void elf_parser_test(std::fstream &fin) {
                 }
             }
             std::cout << std::endl;
+            uint32_t dd;
         }
     }
 }
