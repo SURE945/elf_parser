@@ -1,7 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "include/test.h"
+#include "test.h"
+#include "help.h"
 
 int main(int argc, char* argv[]) {
     std::fstream fin;
@@ -14,8 +15,7 @@ int main(int argc, char* argv[]) {
     }
 
     if (argv[1][1] == 'h') {
-        std::cout << "-h\t\t" << "help information" << std::endl;
-        std::cout << "-t route\t" << "read 100 Byte and print" << std::endl;
+        print_help_information();
     } else if (argv[1][1] == 't') {
         elf_parser_test(fin);
     } else {
