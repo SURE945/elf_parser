@@ -71,7 +71,7 @@ void parse_elf_header(std::fstream &fin) {
         break;
     }
     std::cout << "Machine:" << "\t\t\t\t";
-    switch (header.e_type)
+    switch (header.e_machine)
     {
     case 0:
         std::cout << "No machine" << std::endl;
@@ -98,6 +98,7 @@ void parse_elf_header(std::fstream &fin) {
         std::cout << "MIPS RS3000" << std::endl;
         break;
     default:
+        std::cout << "Other machine" << std::endl;
         break;
     }
     std::cout << "Entry point address:" << "\t\t\t" << std::hex << "0x" << header.e_entry << std::endl;
