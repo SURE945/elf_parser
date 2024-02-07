@@ -17,3 +17,4 @@ make
 |--header|route |print elf header information|
 ## Reference
 1. [ELF offical handbook](https://www.cs.yale.edu/homes/aspnes/pinewiki/attachments/ELF(20)format/ELF_format.pdf)
+2. [HEX offical handbool](http://www.interlog.com/~speff/usefulinfo/Hexfrmt.pdf)
