@@ -1,3 +1,4 @@
-cd ./build/
-cmake ../
+#!/bin/bash
+cd build
+cmake ..
 make
