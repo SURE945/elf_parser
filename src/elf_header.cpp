@@ -101,8 +101,8 @@ void parse_elf_header(std::fstream &fin) {
         break;
     }
     std::cout << "Entry point address:" << "\t\t\t" << std::hex << "0x" << header.e_entry << std::endl;
-    std::cout << "Start of Program headers: " << "\t\t" << std::hex << "0x" << header.e_phoff << std::endl;
-    std::cout << "Start of Section headers: " << "\t\t" << std::hex << "0x" << header.e_shoff << std::endl;
+    std::cout << "Start of Program headers: " << "\t\t" << std::dec << header.e_phoff << std::endl;
+    std::cout << "Start of Section headers: " << "\t\t" << std::dec << header.e_shoff << std::endl;
     std::cout << "Flags: " << space << std::hex << "0x" << header.e_flags << std::endl;
     std::cout << "Size of this header: " << "\t\t\t" << std::dec << header.e_ehsize << std::endl;
     std::cout << "Size of Program header: " << "\t\t" << std::dec << header.e_phentsize << std::endl;
